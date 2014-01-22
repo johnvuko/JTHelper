@@ -1,7 +1,7 @@
-#import "UILabel+JTHelper.h"
+#import "UITextField+JTHelper.h"
 #import "JTHelper.h"
 
-@implementation UILabel (JTHelper)
+@implementation UITextField (JTHelper)
 
 - (CGFloat)heightToFit
 {

@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 
-@interface UILabel (JTHelper)
+@interface UIButton (JTHelper)
 
 - (CGFloat)heightToFit;
 - (void)setHeightToFit;

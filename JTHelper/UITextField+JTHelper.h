@@ -1,6 +1,6 @@
 #import <UIKit/UIKit.h>
 
-@interface UILabel (JTHelper)
+@interface UITextField (JTHelper)
 
 - (CGFloat)heightToFit;
 - (void)setHeightToFit;

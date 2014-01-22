@@ -2,7 +2,7 @@
 
 @interface UIColor (JTHelper)
 
-+ (UIColor *)colorWithIntegerRed:(CFLoat)red green:(CFLoat)green blue:(CFLoat)blue;
-+ (UIColor *)colorWithIntegerRed:(CFLoat)red green:(CFLoat)green blue:(CFLoat)blue alpha:(CFLoat)alpha;
++ (UIColor *)colorWithIntegerRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue;
++ (UIColor *)colorWithIntegerRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha;
 
 @end
