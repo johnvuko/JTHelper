@@ -9,6 +9,7 @@
 	#import "UIImageView+JTHelper.h"
 	#import "UILabel+JTHelper.h"
 	#import "UITextField+JTHelper.h"
+	#import "UIView+MotionEffect.h"
 
 	#define CGRectMakePosition(x, y) CGRectMake(x, y, 0, 0)
 	#define CGRectMakeWithPosition(position) CGRectMake(position.x, position.y, 0, 0)
@@ -23,7 +24,12 @@
 	#define CGRectSetHeight(frame, height) frame = CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, height)
 	#define CGRectSetWidthHeight(frame, width, height) frame = CGRectMake(frame.origin.x, frame.origin.y, width, height)
 	#define CGRectSetXWidth(frame, x, width) frame = CGRectMake(x, frame.origin.y, width, frame.size.height)
-	#define CGRectSetYHeight(frame, y, height) frame = CGRectMake(frame.origin.x, y, frame.size.width, height)
+	#define CGRectSetXHeight(frame, x, height) frame = CGRectMake(x, frame.origin.y, frame.size.width, height)
+	#define CGRectSetYWidth(frame, y, width) frame = CGRectMake(frame.origin.x, y, frame.size.width, height)
+	#define CGRectSetYHeight(frame, y, height) frame = CGRectMake(frame.origin.x, y, width, frame.size.height)
+
+	#define CGRectSetPosition(frame, x, y) frame = CGRectMake(x, y, frame.origin.y, width, frame.size.height)
+	#define CGRectSetSize(frame, size) frame = CGRectMake(frame.origin.x, frame.origin.y, size.width, size.height)
 
 	#define CGRectGetFrameCenter(frame) CGPointMake(frame.size.width / 2., frame.size.height / 2.)
 
@@ -32,9 +38,6 @@
 	#define NSLogSize(size) NSLog(@"%@", NSStringFromCGSize(size))
 
 	#define appDelegate ((AppDelegate *)[UIApplication sharedApplication].delegate)
-
-	#define IS_IOS6 [[UIDevice currentDevice].systemVersion hasPrefix:@"6"]
-	#define IS_IOS7 [[UIDevice currentDevice].systemVersion hasPrefix:@"7"]
 
 	#define STATUSBAR_HEIGHT 20.
 	#define NAVBAR_HEIGHT 44.
