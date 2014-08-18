@@ -22,12 +22,12 @@
 {
     UIImage *resizedImage;
 
-    if(size.height == 0){
-    	size.height = self.size.height / self.size.width * size.width;
-    }
-    else if(size.width == 0){
-    	size.width = self.size.width / self.size.height * size.height;
-    }
+	if(size.height == 0){
+		size.height = self.size.height / self.size.width * size.width;
+	}
+	else if(size.width == 0){
+		size.width = self.size.width / self.size.height * size.height;
+	}
 
 	UIGraphicsBeginImageContext(size);
 	[self drawInRect:CGRectMakeSize(size.width, size.height)];

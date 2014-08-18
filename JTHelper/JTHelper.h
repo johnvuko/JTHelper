@@ -25,8 +25,9 @@
 	#define CGRectSetWidthHeight(frame, width, height) frame = CGRectMake(frame.origin.x, frame.origin.y, width, height)
 	#define CGRectSetXWidth(frame, x, width) frame = CGRectMake(x, frame.origin.y, width, frame.size.height)
 	#define CGRectSetXHeight(frame, x, height) frame = CGRectMake(x, frame.origin.y, frame.size.width, height)
-	#define CGRectSetYWidth(frame, y, width) frame = CGRectMake(frame.origin.x, y, frame.size.width, height)
-	#define CGRectSetYHeight(frame, y, height) frame = CGRectMake(frame.origin.x, y, width, frame.size.height)
+		
+	#define CGRectSetYWidth(frame, y, width) frame = CGRectMake(frame.origin.x, y, width, frame.size.height)
+	#define CGRectSetYHeight(frame, y, height) frame = CGRectMake(frame.origin.x, y, frame.size.width, height)
 
 	#define CGRectSetPosition(frame, x, y) frame = CGRectMake(x, y, frame.origin.y, width, frame.size.height)
 	#define CGRectSetSize(frame, size) frame = CGRectMake(frame.origin.x, frame.origin.y, size.width, size.height)
