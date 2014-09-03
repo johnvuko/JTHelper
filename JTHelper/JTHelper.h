@@ -29,7 +29,7 @@
 	#define CGRectSetYWidth(frame, y, width) frame = CGRectMake(frame.origin.x, y, width, frame.size.height)
 	#define CGRectSetYHeight(frame, y, height) frame = CGRectMake(frame.origin.x, y, frame.size.width, height)
 
-	#define CGRectSetPosition(frame, x, y) frame = CGRectMake(x, y, frame.origin.y, width, frame.size.height)
+	#define CGRectSetPosition(frame, x, y) frame = CGRectMake(x, y, frame.size.width, frame.size.height)
 	#define CGRectSetSize(frame, size) frame = CGRectMake(frame.origin.x, frame.origin.y, size.width, size.height)
 
 	#define CGRectGetFrameCenter(frame) CGPointMake(frame.size.width / 2., frame.size.height / 2.)
