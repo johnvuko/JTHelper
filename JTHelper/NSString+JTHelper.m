@@ -4,7 +4,7 @@
 
 - (BOOL)isBlank
 {
-    return [self isEqualToString:@""];
+    return self.length == 0;
 }
 
 @end

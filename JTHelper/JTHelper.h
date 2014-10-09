@@ -11,6 +11,8 @@
 	#import "UITextField+JTHelper.h"
 	#import "UIView+MotionEffect.h"
 
+	#define NSSTRING_IS_NOT_BLANK(x) (x != nil && x.length > 0)
+
 	#define CGRectMakePosition(x, y) CGRectMake(x, y, 0, 0)
 	#define CGRectMakeWithPosition(position) CGRectMake(position.x, position.y, 0, 0)
 
@@ -23,6 +25,7 @@
 	#define CGRectSetWidth(frame, width) frame = CGRectMake(frame.origin.x, frame.origin.y, width, frame.size.height)
 	#define CGRectSetHeight(frame, height) frame = CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, height)
 	#define CGRectSetWidthHeight(frame, width, height) frame = CGRectMake(frame.origin.x, frame.origin.y, width, height)
+	
 	#define CGRectSetXWidth(frame, x, width) frame = CGRectMake(x, frame.origin.y, width, frame.size.height)
 	#define CGRectSetXHeight(frame, x, height) frame = CGRectMake(x, frame.origin.y, frame.size.width, height)
 		
