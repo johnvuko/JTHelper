@@ -14,6 +14,8 @@
 	#define NSSTRING_IS_NOT_BLANK(x) (x != nil && x.length > 0)
 	#define NSSTRING_IS_BLANK(x) (x == nil || x.length == 0)
 
+	#define TR(x) NSLocalizedString(x, nil)
+
 	#define CGRectMakePosition(x, y) CGRectMake(x, y, 0, 0)
 	#define CGRectMakeWithPosition(position) CGRectMake(position.x, position.y, 0, 0)
 
