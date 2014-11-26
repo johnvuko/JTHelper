@@ -16,6 +16,9 @@
 
 	#define TR(x) NSLocalizedString(x, nil)
 
+	#define RADIANS_TO_DEGREES(radians) ((radians) * (180.0 / M_PI))
+	#define DEGREES_TO_RADIANS(angle) ((angle) / 180.0 * M_PI)
+
 	#define CGRectMakePosition(x, y) CGRectMake(x, y, 0, 0)
 	#define CGRectMakeWithPosition(position) CGRectMake(position.x, position.y, 0, 0)
 
