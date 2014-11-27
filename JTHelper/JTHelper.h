@@ -11,8 +11,8 @@
 	#import "UITextField+JTHelper.h"
 	#import "UIView+MotionEffect.h"
 
-	#define NSSTRING_IS_NOT_BLANK(x) (x != nil && x.length > 0)
-	#define NSSTRING_IS_BLANK(x) (x == nil || x.length == 0)
+	#define NSSTRING_IS_NOT_BLANK(x) (x != nil && [x length] > 0)
+	#define NSSTRING_IS_BLANK(x) (x == nil || [x length] == 0)
 
 	#define TR(x) NSLocalizedString(x, nil)
 
