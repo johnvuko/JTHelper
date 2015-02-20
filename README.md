@@ -1,5 +1,4 @@
-JTHelper
-========
+# JTHelper
 
 JTHelper is just a toolbox for common tasks in iOS.
 

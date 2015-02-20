@@ -15,6 +15,8 @@
 	#define NSSTRING_IS_BLANK(x) (x == nil || [x length] == 0)
 
 	#define TR(x) NSLocalizedString(x, nil)
+	
+	#define NSDICTIONARY_SET_VALUE(dictionary, key, value) if(value){dictionary[key] = value;}
 
 	#define RADIANS_TO_DEGREES(radians) ((radians) * (180.0 / M_PI))
 	#define DEGREES_TO_RADIANS(angle) ((angle) / 180.0 * M_PI)
