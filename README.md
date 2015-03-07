@@ -6,7 +6,7 @@ JTHelper is just a toolbox for common tasks in iOS.
 
 With [CocoaPods](http://cocoapods.org/), add this line to your Podfile.
 
-	pod 'JTHelper', '~> 0.1.0'
+	pod 'JTHelper', '~> 0.1'
 
 ## Requirements
 

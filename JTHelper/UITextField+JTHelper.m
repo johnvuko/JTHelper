@@ -5,7 +5,7 @@
 
 - (CGFloat)heightToFit
 {
-    if(self.text == nil || [self.text isBlank]){
+    if(NSSTRING_IS_BLANK(self.text)){
         return 0.;
     }
     
@@ -27,7 +27,7 @@
 
 - (CGFloat)widthToFit
 {
-    if(self.text == nil || [self.text isBlank]){
+    if(NSSTRING_IS_BLANK(self.text)){
         return 0.;
     }
 
