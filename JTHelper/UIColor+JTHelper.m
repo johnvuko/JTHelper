@@ -9,7 +9,7 @@
 
 + (UIColor *)colorWithIntegerRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue alpha:(CGFloat)alpha
 {
-    return [UIColor colorWithRed:(red / 256.) green:(green / 256.) blue:(blue / 256.) alpha:alpha];
+    return [UIColor colorWithRed:(red / 255.) green:(green / 255.) blue:(blue / 255.) alpha:alpha];
 }
 
 @end
