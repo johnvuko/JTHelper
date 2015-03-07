@@ -1,7 +1,6 @@
 #ifndef _JTHELPER_
 #define _JTHELPER_
 
-	#import "NSString+JTHelper.h"
 	#import "UIBarButtonItem+JTHelper.h"
 	#import "UIButton+JTHelper.h"
 	#import "UIColor+JTHelper.h"
@@ -10,6 +9,7 @@
 	#import "UILabel+JTHelper.h"
 	#import "UITextField+JTHelper.h"
 	#import "UIView+MotionEffect.h"
+	#import "UIView+TapGesture.h"
 
 	#define NSSTRING_IS_NOT_BLANK(x) (x != nil && [x length] > 0)
 	#define NSSTRING_IS_BLANK(x) (x == nil || [x length] == 0)
@@ -56,10 +56,16 @@
 	#define SCREEN_WIDTH [[UIScreen mainScreen] bounds].size.width
 	#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
 
-	#define UICOLOR_DEFINE(name, r, g, b) \
+	#define UICOLOR_DEFINE_RGB(name, r, g, b) \
 	+ (instancetype)name\
 	{\
-	return [UIColor colorWithIntegerRed:r green:g blue:b];\
+		return [UIColor colorWithIntegerRed:r green:g blue:b];\
+	}
+
+	#define UICOLOR_DEFINE_RGBA(name, r, g, b, a) \
+	+ (instancetype)name\
+	{\
+		return [UIColor colorWithIntegerRed:r green:g blue:b alpha:a];\
 	}
 
 	#define UIVIEW_COMMON_INIT \
