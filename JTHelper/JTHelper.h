@@ -10,6 +10,7 @@
 	#import "UITextField+JTHelper.h"
 	#import "UIView+MotionEffect.h"
 	#import "UIView+TapGesture.h"
+	#import "UIView+JTLayout.h"
 
 	#define NSSTRING_IS_NOT_BLANK(x) (x != nil && [x length] > 0)
 	#define NSSTRING_IS_BLANK(x) (x == nil || [x length] == 0)
