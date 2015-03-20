@@ -94,6 +94,19 @@
 	    return self;\
 	}
 
+	#define UITABLEVIEWCELL_COMMON_INIT \
+	- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier\
+	{\
+	    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];\
+	    if(!self){\
+	        return nil;\
+	    }\
+	    \
+	    [self commonInit];\
+	    \
+	    return self;\
+	}
+
 	#define DEFINE_SHARED_INSTANCE \
 	+ (instancetype)sharedInstance\
 	{\
