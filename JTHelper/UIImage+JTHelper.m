@@ -6,7 +6,8 @@
 + (UIImage *)imageWithColor:(UIColor *)color
 {
 	CGRect rect = CGRectMakeSize(1, 1);
-	UIGraphicsBeginImageContext(rect.size);
+
+	UIGraphicsBeginImageContextWithOptions(rect.size, NO, [[UIScreen mainScreen] scale]);
 	CGContextRef context = UIGraphicsGetCurrentContext();
 
 	CGContextSetFillColorWithColor(context, [color CGColor]);
@@ -29,7 +30,7 @@
 		size.width = self.size.width / self.size.height * size.height;
 	}
 
-	UIGraphicsBeginImageContext(size);
+	UIGraphicsBeginImageContextWithOptions(size, NO, [[UIScreen mainScreen] scale]);
 	[self drawInRect:CGRectMakeSize(size.width, size.height)];
 	resizedImage = UIGraphicsGetImageFromCurrentImageContext();
 	UIGraphicsEndImageContext();
